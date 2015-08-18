@@ -7,7 +7,7 @@
 
 // Declare an object like a function.
 // This is called a contructor
-function Song(title) {
+function DaftPunkSong(title) {
     this.title = title;
     this.artist = 'Daft Punk';
 
@@ -20,18 +20,20 @@ function Song(title) {
     }
 }
 
-var lucky = new Song('Get Lucky');
+var lucky = new DaftPunkSong('Get Lucky');
 console.log(lucky);
-var oneMore = new Song('One More Time');
+var oneMore = new DaftPunkSong('One More Time');
 console.log(oneMore);
 lucky.play();
 
 // If you need to add a property to the Contructor AFTER creating it:
-Song.prototype.stop = function(){
+DaftPunkSong.prototype.stop = function(){
   console.log('Stopping ' + this.title);
 }
 lucky.stop();
 
+// Is this really a DaftPunkSong?
+console.log(lucky instanceof DaftPunkSong);
 
 /*------------------------------------------------*/
 // Scope
@@ -55,13 +57,13 @@ function testingAgain(){
 /*------------------------------------------------*/
 // Time
 /*------------------------------------------------*/
-// setTimeout
-// JS be like: wait N ms before doint that thing.
-window.setTimeout(function() {
-  alert('yo');
-}, 2000);
+// // setTimeout
+// // JS be like: wait N ms before doint that thing.
+// window.setTimeout(function() {
+//   alert('yo');
+// }, 2000);
 
-// JS be like: wait N ms between repetitions.
-window.setInterval(function() {
-  alert('yay');
-}, 2000);
+// // JS be like: wait N ms between repetitions.
+// window.setInterval(function() {
+//   alert('yay');
+// }, 2000);

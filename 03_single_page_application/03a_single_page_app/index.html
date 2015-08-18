@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Advanced 03: SIngle-Page Application</title>
+		<meta charset="utf-8" />
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="msapplication-tap-highlight" content="no">
+	    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="container">
+
+			<div id="menu">
+				<a href="#about" id="about">
+					About
+				</a>
+				<a href="#my-gallery" id="my-gallery">
+					My Gallery
+					<span id="n-items">0</span>
+				</a>
+			</div>
+
+			<div id="search">
+				<input id="search-box" type="text" placeholder="Search metmuseum.org"/>
+				<button id="search-button">OK</button>
+			</div>
+
+			<div id="view"></div>
+
+		</div>
+
+		<!-- Template for Loading page -->
+		<script type="text/html" id="tpl-loading">
+			<img src="img/loading_spinner.gif" class="loading"/>
+		</script>
+
+		<!-- Template for About page -->
+		<script type="text/html" id="tpl-about">
+			<div class="page" id="about-page">
+				<h1>About</h1>
+				<p>As our application grows in complexity, appending elements with JQuery turns out laborious and not effficient.<br/>
+					This might be ok if you are working by yourself! But... The biggest problem with this structure is that the structure and the logics are all embedded into one file. Say you are developing JS for a team, where another person is doing CSS. By simply looking into the html, your colleague has no way of telling what the page is doing. Also, he/she cannot assign classes to anything without opening your file and skimming through the code just to find the html part.<br/>
+					Separating the logics from the rendered result is one of the principals of the architectural pattern Model-View-Controller (MVC).
+				</p>
+			</div>
+		</script>	
+
+		<!-- Template for Search Results page -->
+		<script type="text/html" id="tpl-search-results">
+			<div class="page">
+				<h1>Search Results</h1>
+
+			</div>
+		</script>
+
+		<!-- Template for Gallery page -->
+		<script type="text/html" id="tpl-my-gallery">
+			<div class="page">
+				<h1>My Gallery</h1>
+
+			</div>
+		</script>
+
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
