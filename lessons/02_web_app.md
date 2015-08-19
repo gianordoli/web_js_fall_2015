@@ -26,6 +26,7 @@ No slides for today, we'll talk about the topics during the work session.
 	* Document Object Model (DOM)
 	* Libraries
 		* What is a library
+		* [cdnjs](https://cdnjs.com/)
 		* Vanilla JS vs JQuery
 	* Loading and displaying JSON data
 	
