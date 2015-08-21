@@ -15,13 +15,86 @@ Spring, 2015* **Course Dates and Times and Location:**  Wednesdays, from 7:00 
 
 ## Course Description
 
-TBD
-
+Applications rarely are comprised of a tangled set of static files. They're dynamic. They update. They remember things. The course will introduce the concepts of a database and Web applications as a set of design problems. The class will investigate server-side applications, third-party data sources and APIs and how applications can become dynamic and highly functional. To approach the design and construction of applications that derive from datasources and databases, this course builds upon an essential knowledge of Web Standards, user interface design, and usability to support the creation of functional and responsive projects for the Web across multiple devices and platforms. Students will incorporate interaction design, visual design, user experience and code to rapidly sculpt data into content. By the end of the course, students should be able to design, build and deploy data-driven Web applications. The course employs a pedagogy suitable for designers, artists and technologists who seek an empowerment achieved by being able to build data-driven applications.
 
 ## Course Outline
 
 TBD
 
+## Learning Outcomes
+
+By the successful completion of this course, students will be able to:
+
+* Have a better understanding of how web applications work
+* Be comfortable with coding in JavaScript, from server to front-end.
+* Develop working prototypes and publish them.
+* Select and apply different technologies in order to realize their ideas.
+
+## Assessable Tasks
+
+All assignments must be submitted through Github to the [class repository](https://github.com/mfadt-webjs-fall-2015/assignments).
+
+### Weekly Assignments
+
+Please refer to each lesson for a list of weekly assignments.
+
+### Projects
+
+#### Project #1
+
+Build a data-driven web application. Your project must:
+
+* At least READ data from an external source — Parse, a JSON file, or whatever you feel more comfortable with.
+* Have no less than 2 different "screens." If you're building a canvas-based game, maybe you have 2 scenes? If it's a dynamic html website, 2 pages. If it's a datavis, 2 charts or 2 ways of visualizing the same data and so on.
+* Respond to user interaction.
+
+#### Project #2 (Midterm)
+
+Team up with another student and build a websockets-based app. Any bi-directional communication is valid here: client <--> server, hardware <--> server. Please notice that *bi-directional* is a requirement. We're looking for true communication, sending and receiving data/messages/actions/inputs back and forth.
+
+#### Project #3 (Final)
+
+Team up with another student and build a project that interacts with the server-side. NodeJS is a requirement, but an HTML page is not. Feel free to use your technology of choice on the client-side.
+
+
+### Grading Criteria
+
+* **Weekly assignments** are intended to assess your development throughout the course.
+
+| Criteria	| %	|
+|:-	 |:-	|
+| Does it meet the requirements outlined in the asignment? | 40% |
+| Does it work?	| 40% |
+| Was it submitted on time? | 20%	|
+
+* **Projects** are intended to assess your capacity of creatively applying your skills.
+
+| Criteria	| Details	| %	|
+|:-	 |:-	| :-	|
+| Does it meet the requirements outlined in the asignment? | | 20% |
+| Does it work?	| | 20% |
+| Is the purpose of the project clear? | Interests may vary enormously among students. The only way for me to evaluate a project is to understand what you were trying to achieve.	| 10% |
+| Is it functional?	| Unless your intention is to confuse people — in which case you should clearly communicate that —, your project should be usable. | 10% |
+| Is it creative? | Even if you're inspired by something that already exists, think about how you can develop the idea further. | 10% |
+| Does it show development? | If something is not quite right — conceptually or technically — work to improve it. | 10% |
+| Was it submitted on time? | | 20%	|
+
+Some notes:
+
+* Feel free to present with slides if you want, but that is not a requirement.
+* I will not check your code line by line looking for bugs. So please submit your assignments as functional as possible. If the page just crashes on loading I will not be able to understand whether or not you have accomplished something. In those cases, comment out the bug and leave a note with details. For instance: "This part should display the data, but I wasn't able to finish it."
+
+### Some Useful Advice
+
+DT is great, because you have the chance to do (almost) anything you want for 2 years. And assignments are great for keeping up with the skills you're learning. But this scenario can be distracting too. Think of this opportunity — not only in this class — as a chance to find out or go deeper into what interests you.
+Try to approach even the smallest of the assignments with that in mind. You don't need to work on a single project for the whole course, but maybe your projects will evolve around:
+
+* A theme — housing issues, China, technology biases, cute bears, etc.
+* An aesthetics — vernacular web, retro-futurism, minimalism, etc.
+* An approach/field — games, critical design, net-art, design thinking, etc.
+* A technology — physical computing, interactive installations, databases, wearables, etc.
+
+Even if you find out that *you're not* really interested in what you explored, that'll be a good thing to learn.
 
 ## Required Tools
 
@@ -41,15 +114,18 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 
 ## Final Grade Calculation
 
-* Participation/Attendance 20%
-* Mini Assignments(Total) 30%
-* Midterm Project 25%
-* Final Project 25%
+| Item							| %		|
+|:-								|:-		|
+| Participation/Attendance	| 10%	|
+| Mini Assignments(Total)	| 35%	|
+| Project #1					| 15%	|
+| Project #2 (Midterm)		| 25%	|
+| Project #3 (Final)		| 25%	|
 
 
 ## Grading Standards
 
-### Graduate* A	Work of exceptional quality * A-	Work of high quality* B+	Very good work* B 	Good work; satisfies course requirements Satisfactory completion of a course is considered to be a grade of B or higher.* B-	Below-average work* C+ 	Less than adequate work* C 	Well below average work* C-	Poor work; lowest possible passing grade* F	Failure* GM	Grade missing for an individualGrades of D are not used in graduate level courses.#### Grade of W
+### Graduate* A		Work of exceptional quality * A-	Work of high quality* B+	Very good work* B 	Good work; satisfies course requirements Satisfactory completion of a course is considered to be a grade of B or higher.* B-	Below-average work* C+ 	Less than adequate work* C 	Well below average work* C-	Poor work; lowest possible passing grade* F	Failure* GM	Grade missing for an individualGrades of D are not used in graduate level courses.#### Grade of W
 The grade of W may be issued by the Office of the Registrar to a student who officially withdraws from a course within the applicable deadline. There is no academic penalty, but the grade will appear on the student transcript. A grade of W may also be issued by an instructor to a graduate student (except at Parsons and Mannes) who has not completed course requirements nor arranged for an Incomplete.
 
 #### Grade of WF

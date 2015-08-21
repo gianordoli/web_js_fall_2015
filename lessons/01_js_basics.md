@@ -69,3 +69,11 @@ More and more JavaScript has been used for purposes other than front-end develop
 * Interactive Data Visualization for the Web, [Chapter 3: Technology Fundamentals](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html)
 
 A full list of resources can be found [here](https://docs.google.com/spreadsheets/d/1Of_llTTAOZ_o8CGmiXSZnMmZBthQvxQiC34YWId9IJs/edit?usp=sharing).
+
+---
+
+### Homework
+
+Create a word-count app. It must receive any text input through the console and return a list of words and their counts.  
+**Bonus:** make it interact with an API.  
+**Super:** implement a more complex text analysis, like [TF-IDF](http://shiffman.net/teaching/a2z/analysis/#tfidf).

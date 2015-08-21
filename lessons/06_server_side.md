@@ -1,4 +1,4 @@
-## Lesson 5: Server-Side
+## Lesson 6: Server-Side
 
 In this lesson we will start developping JavaScript for the server-side. We will set up a simple server using NodeJS, create an API, and make it interact with the client requests.  
 We will also see some other useful features in NodeJS, like scraping and saving files.

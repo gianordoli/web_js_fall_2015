@@ -39,6 +39,7 @@ For now we'll use template engines. Not the same as MVC, but they'll help us get
 ### Extra
 
 * python simple server
+* [Github pages](https://pages.github.com/)
 
 ---
 
@@ -47,6 +48,6 @@ For now we'll use template engines. Not the same as MVC, but they'll help us get
 * [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 * [Single-Page Application](https://en.wikipedia.org/wiki/Single-page_application)
 * [Data Binding](https://en.wikipedia.org/wiki/Data_binding)
-* [The Past, PResent, and Future of Local Storage for Web Applications](http://diveintohtml5.info/storage.html)
+* [The Past, Present, and Future of Local Storage for Web Applications](http://diveintohtml5.info/storage.html)
 
 A full list of resources can be found [here](https://docs.google.com/spreadsheets/d/1Of_llTTAOZ_o8CGmiXSZnMmZBthQvxQiC34YWId9IJs/edit?usp=sharing).
