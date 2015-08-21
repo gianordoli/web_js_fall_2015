@@ -1,5 +1,6 @@
 ## Lesson 7: Cloud
 
+In this lesson we will briefly discuss what is "the cloud" and some of its models. Then we will jukmp into a hands-on session to set up a server using Amazon Web Services.
 
 ---
 

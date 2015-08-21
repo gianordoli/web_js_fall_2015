@@ -82,6 +82,7 @@ Team up with another student and build a project that interacts with the server-
 Some notes:
 
 * Feel free to present with slides if you want, but that is not a requirement.
+* I will not grade the cleanliness or organization of your code. But bear in mind that writing things the right way will help you be more efficient — and save a lot of time once you decide to reuse your examples in the future. See [coding advice](https://docs.google.com/presentation/d/1z7rMfhhKrFX2qc1_I64gpM1H0iIaD1CCiSCG-VaY-0U/edit?usp=sharing) for more.
 * I will not check your code line by line looking for bugs. So please submit your assignments as functional as possible. If the page just crashes on loading I will not be able to understand whether or not you have accomplished something. In those cases, comment out the bug and leave a note with details. For instance: "This part should display the data, but I wasn't able to finish it."
 
 ### Some Useful Advice
