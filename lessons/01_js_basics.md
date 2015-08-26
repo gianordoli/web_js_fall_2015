@@ -65,6 +65,7 @@ More and more JavaScript has been used for purposes other than front-end develop
 ### Recommended Readings and Sources
 
 * [A Short History of JavaScript](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript)
+* [Two Quick Brendan Eich Stories](http://pmarcasays.golaun.ch/2014/04/04/two-quick-brendan-eich-stories/)
 * [Video: JavaScript: The Good Parts](https://www.youtube.com/watch?v=hQVTIJBZook)
 * Interactive Data Visualization for the Web, [Chapter 3: Technology Fundamentals](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html)
 
