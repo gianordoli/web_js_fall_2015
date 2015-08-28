@@ -127,3 +127,10 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 ### Required Tools
 
 * Create a [Parse](https://www.parse.com) account prior to the class.
+
+
+---
+
+### Homework
+
+Work on Project #1.

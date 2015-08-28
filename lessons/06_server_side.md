@@ -83,3 +83,10 @@ We will also see some other useful features in NodeJS, like scraping and saving 
 
 * [NodeJS](https://nodejs.org/)
 * [Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en) Chrome Extension
+
+---
+
+### Homework
+
+Create an app that interacts with the file system. No user input required, but that might make things more interesting. As usual, try to match this with your personal interests. Maybe you want to [visualize your files/file structure](https://gabrielmfadt.wordpress.com/2014/02/23/defrag-style-data-visualization/)? Or create a [game that permanently deletes your files](http://www.stfj.net/art/2009/loselose/)? Or make an [OS-like website](http://www.windows93.net/)?  
+**Bonus:** as usual, *make it interact with an API*.

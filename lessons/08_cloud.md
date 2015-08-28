@@ -1,4 +1,4 @@
-## Lesson 7: Cloud
+## Lesson 8: Cloud
 
 In this lesson we will briefly discuss what is "the cloud" and some of its models. Then we will jukmp into a hands-on session to set up a server using Amazon Web Services.
 
@@ -35,3 +35,10 @@ In this lesson we will briefly discuss what is "the cloud" and some of its model
 ### Required Tools
 
 * Create an [Amazon](http://www.amazon.com/) account prior to the class
+
+---
+
+### Homework
+
+* Work on Project #2.
+* Set up your EC2.

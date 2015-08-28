@@ -1,4 +1,4 @@
-## Lesson 8: WebSockets 1
+## Lesson 7: WebSockets 1
 
 These two lessons will focus on fast client-server communication using WebSockets. We will discuss when to use WebSockets (versus AJAX) and the many applications of it.  
 In the working session we will build a simple chat and a bare-bones multiplayer game using the Socket.io library.
@@ -46,3 +46,12 @@ In the working session we will build a simple chat and a bare-bones multiplayer 
 ### Extra
 
 * [Can I use...?](http://caniuse.com/)
+* [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+* NodeJS [colors](https://www.npmjs.com/package/colors) in the console
+
+---
+
+### Homework
+
+#### Project #2 proposal
+Now that you have seen some use cases for WebSockets, think about what you would do with it. Try to come up with a proposal as detailed as possible. Who is it for? How does it work? What technologies — third-party APIs, mobile, NodeJS modules, etc — do you need? Does it require a database? What is the data model?

@@ -51,3 +51,9 @@ For now we'll use template engines. Not the same as MVC, but they'll help us get
 * [The Past, Present, and Future of Local Storage for Web Applications](http://diveintohtml5.info/storage.html)
 
 A full list of resources can be found [here](https://docs.google.com/spreadsheets/d/1Of_llTTAOZ_o8CGmiXSZnMmZBthQvxQiC34YWId9IJs/edit?usp=sharing).
+
+---
+
+### Homework
+
+Start working on Project #1.
