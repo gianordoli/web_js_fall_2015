@@ -35,42 +35,41 @@ server.listen(PORT, function(){
 
 
 /*-------------- APP --------------*/
-
 // Everything will be inside the on() function
 // .on() listens to any string you create ('gabriel-entered', 'shakti-arrived',...)
 // or two predefined events: 'connection' and 'disconnect'
 io.on('connection', function(socket) {
     /*––––––––––– SOCKET.IO starts here –––––––––––––––*/
 
-    // .on(identifier, callback(data))      listens to 
-    // .emit(identifier, data)              sends data to every user
-    // .broadcast.emit(identifier, data)    sends data to every user,
-    //                                      except the newly created
-    
-    /*---------- THIS ALL HAPPENS ON EVERY NEW CONNECTION ----------*/
+    // .on()                listens to 
+    // .emit()              sends data to every user
+    // .broadcast.emit()    sends data to every user, except the newly created
+
+    // console.log(socket);
     console.log('A new user has connected: ' + socket.id);
 
-    // I'm using 'welcome,' but it could be ANY STRING!
+    // This could be any string!
     // The important thing is to use the same one on the client side
-    socket.emit('welcome', 'Welcome! your id is ' + socket.id);  // sending back a simple string
+    socket.emit('welcome', 'Your user ID is ' + socket.id);
+    
+    // addUser(socket.id);
 
-    // The code above sent a message to the newly created connection only! (socket)
-    // If we want to send data to every user, we need io.sockets.emmit
-    io.sockets.emit('hey-everybody', 'hey, everybody! Please welcome ' + socket.id);
-    /*--------------------------------------------------------------*/
+    // // Listening for chat message
+    // socket.on('chat msg', function(data) {
+    //     console.log(socket.id + ' has sent: ' + data);
+    //     // Emit to every clients
+    //     io.sockets.emit('from clients', {
+    //         user: data.name,
+    //         msg: data.msg
+    //     });
+    // });
 
-
-    /*----- THESE ARE LISTENERS! CALLED WHEN A MSG IS RECEIVED -----*/
-    // A listener for socket disconnection
-    socket.on('disconnect', function() {
-        io.sockets.emit('bye', 'See you, ' + socket.id + '!');
-    });    
-
-    socket.on('msg-to-server', function(data) {
-        io.sockets.emit('msg-to-clients', {
-            id: socket.id,
-            msg: data
-        });
-    });
-    /*--------------------------------------------------------------*/
+    // // A listener for socket disconnection
+    // socket.on('disconnect', function() {
+    //     console.log(socket.id + ' just disconnected');
+    //     io.sockets.emit('global message', socket.id + ' just disconnected');
+    //     removeUser(socket.id);
+    // });
 });
+
+

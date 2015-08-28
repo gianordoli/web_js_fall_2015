@@ -35,6 +35,16 @@ server.listen(PORT, function(){
 
 
 /*-------------- APP --------------*/
+var users = {}
+// our structure will be
+// users = { id: {
+//             color: hsl() string,
+//             top: integer,
+//             left: integer
+
+//             },
+//             ...
+//         };
 
 // Everything will be inside the on() function
 // .on() listens to any string you create ('gabriel-entered', 'shakti-arrived',...)
@@ -42,10 +52,9 @@ server.listen(PORT, function(){
 io.on('connection', function(socket) {
     /*––––––––––– SOCKET.IO starts here –––––––––––––––*/
 
-    // .on(identifier, callback(data))      listens to 
-    // .emit(identifier, data)              sends data to every user
-    // .broadcast.emit(identifier, data)    sends data to every user,
-    //                                      except the newly created
+    // .on()                listens to 
+    // .emit()              sends data to every user
+    // .broadcast.emit()    sends data to every user, except the newly created
     
     /*---------- THIS ALL HAPPENS ON EVERY NEW CONNECTION ----------*/
     console.log('A new user has connected: ' + socket.id);
@@ -56,21 +65,80 @@ io.on('connection', function(socket) {
 
     // The code above sent a message to the newly created connection only! (socket)
     // If we want to send data to every user, we need io.sockets.emmit
-    io.sockets.emit('hey-everybody', 'hey, everybody! Please welcome ' + socket.id);
+    addUser(socket.id);
+    io.sockets.emit('add-ball', {
+        id: socket.id,
+        color: users[socket.id]['color'],
+        top: users[socket.id]['top'],
+        left: users[socket.id]['left']
+    }); // I'm sending an object!
     /*--------------------------------------------------------------*/
 
 
     /*----- THESE ARE LISTENERS! CALLED WHEN A MSG IS RECEIVED -----*/
     // A listener for socket disconnection
     socket.on('disconnect', function() {
-        io.sockets.emit('bye', 'See you, ' + socket.id + '!');
+        console.log(socket.id + ' just disconnected');
+        removeUser(socket.id);  // Remove object from our server array of users
+        io.sockets.emit('remove-ball', socket.id);  // Ask clients to remove the div
     });    
 
-    socket.on('msg-to-server', function(data) {
-        io.sockets.emit('msg-to-clients', {
+    // listen to 'move' -> update user position -> emit call to render
+    socket.on('move', function(data) {
+        console.log(socket.id + ' has sent: ' + data);  // got a number
+        console.log(typeof data);
+
+        updateUser(socket.id, data);   // Update position
+
+        io.sockets.emit('render', { // Update position on client
             id: socket.id,
-            msg: data
+            color: users[socket.id]['color'],
+            top: users[socket.id]['top'],
+            left: users[socket.id]['left']
         });
     });
     /*--------------------------------------------------------------*/
 });
+
+function updateUser(id, data){
+    switch(data) {
+        case 37: // left
+            users[id]['left'] -= 10;
+        break;
+
+        case 39: // right
+            users[id]['left'] += 10;
+        break;
+
+        case 38: // up
+            users[id]['top'] -= 10;
+        break;
+
+        case 40: // down
+            users[id]['top'] += 10;
+        break;
+
+        default: return; // exit
+    }
+}
+
+function addUser(id) {
+    if(!users.hasOwnProperty(id)) {
+        users[id] = {
+            color: 'hsl(' + Math.round(Math.random()*360) + ', 100%, 50%)',
+            top: 0,
+            left: 0   
+        }
+    }
+    console.log('current users: ' + users.length);
+}
+
+function removeUser(id) {
+    if(users.hasOwnProperty(id)) {
+        delete users[id]
+    }
+    console.log('current users: ' + users.length);
+}
+
+
+

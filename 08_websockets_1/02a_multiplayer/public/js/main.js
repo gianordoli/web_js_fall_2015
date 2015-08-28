@@ -14,32 +14,32 @@ app.main = (function() {
 	    socket = io.connect();
 
 		// Listeners
-		socket.on('welcome', function(data){
-			alert(data);
-		});
+		socket.on('', function(data){
 
-		socket.on('hey-everybody', function(data){
-			$('body').append('<h3>'+data+'</h3>');
-		});
-
-		socket.on('bye', function(data){
-			$('body').append('<h3>'+data+'</h3>');
-		});		
-		
-		socket.on('msg-to-clients', function(data){
-			$('body').append('<p>' + data.id + ' says: ' + data.msg + '</p>');
 		});
 
 		// Call attachEvents
 		callback();
 	};
 
+	var addBall = function(data){
+
+	};
+
+	var removeBall = function(data){
+
+	};
+
+	var moveBall = function(data){
+
+	};
+
+	var ballExists = function(id){
+
+	};
+
 	var attachEvents = function(){
-		$('#msg-box').keypress(function(e) {
-			if (e.keyCode == 13) {
-				socket.emit('msg-to-server', $('#msg-box').val());
-			}
-		});
+
 	};	
 
 	var init = function(){

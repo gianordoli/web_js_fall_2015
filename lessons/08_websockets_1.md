@@ -1,7 +1,7 @@
 ## Lesson 8: WebSockets 1
 
 These two lessons will focus on fast client-server communication using WebSockets. We will discuss when to use WebSockets (versus AJAX) and the many applications of it.  
-In the working session we will build a simple chat application using the Socket.io library.
+In the working session we will build a simple chat and a bare-bones multiplayer game using the Socket.io library.
 
 ---
 
@@ -29,24 +29,18 @@ In the working session we will build a simple chat application using the Socket.
 	* [Socket.io](http://socket.io/)
 		* [Polyfill](https://remysharp.com/2010/10/08/what-is-a-polyfill)
 
-### Working Session: Simple Chat
+### Working Session: Socket.io
 
-* Application Diagram
-* Front-end
-* Adding the socket.io library
-* Underscore template
-* Messaging
-	* Events
-	* Socket connection
-		* front-end
-		* server (everything happens inside the on('connection') scope)
-	* socket.emit
-		* Any data type (String, number, {}, ...)
+* Simple Chat
+	* Application Diagram
+	* Adding the socket.io library	
+	* Messaging
+		* Listeners
 
-* Registering users
-	* users = []
-	* disconnect
-	* user name
+* Multiplayer
+	* Application Diagram
+	* Updating the server data
+	* Updating the client view
 
 	
 ### Extra

@@ -1,0 +1,7 @@
+/* your style begins here */
+.ball{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
