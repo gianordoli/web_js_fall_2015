@@ -8,8 +8,6 @@ In this lesson we will briefly discuss what is "the cloud" and some of its model
 
 #### Cloud Models
 
-# Cloud Models
-
 * SaaS (Software as a Service)
 	* Google Docs
 	* Cloud 9
@@ -30,6 +28,7 @@ In this lesson we will briefly discuss what is "the cloud" and some of its model
 ### Extra
 
 * [Samba](https://www.samba.org)
+* [forever](https://www.npmjs.com/package/forever)
 
 ---
 

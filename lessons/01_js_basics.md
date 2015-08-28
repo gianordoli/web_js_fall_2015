@@ -68,6 +68,7 @@ More and more JavaScript has been used for purposes other than front-end develop
 * [Two Quick Brendan Eich Stories](http://pmarcasays.golaun.ch/2014/04/04/two-quick-brendan-eich-stories/)
 * [Video: JavaScript: The Good Parts](https://www.youtube.com/watch?v=hQVTIJBZook)
 * Interactive Data Visualization for the Web, [Chapter 3: Technology Fundamentals](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html)
+* [A web developer walks into a bar… and Other Great Jokes](https://medium.com/@jerstew/web-development-jokes-d97bc7c8891b)
 
 A full list of resources can be found [here](https://docs.google.com/spreadsheets/d/1Of_llTTAOZ_o8CGmiXSZnMmZBthQvxQiC34YWId9IJs/edit?usp=sharing).
 
