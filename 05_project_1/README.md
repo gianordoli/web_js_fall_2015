@@ -1,1 +1,1 @@
-Students present their first project.
+Students present project #1.
