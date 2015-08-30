@@ -23,7 +23,7 @@ See [this spreadsheet](https://docs.google.com/spreadsheets/d/1ASEmUl6g2S2g-eg-p
 For a full description of each class, see the [lessons](lessons) folder.
 
 | class # | date | topic | assignment |
-|:- |:- |:- |:- |
+|:--- |:--- |:--- |:--- |
 | 1 | 9/2/2015 | JavaScript Basics | Word-count app |
 | 2 | 9/9/2015 | Web App | Web app |
 | 3 | 9/16/2015 | Single-Page Application | Start working on Project #1. |
@@ -82,7 +82,7 @@ Team up with another student and build a project that interacts with the server-
 * **Weekly assignments** are intended to assess your development throughout the course.
 
 | Criteria	| %	|
-|:-	 |:-	|
+|:---	 |:---	|
 | Does it meet the requirements outlined in the asignment? | 40% |
 | Does it work?	| 40% |
 | Was it submitted on time? | 20%	|
@@ -90,7 +90,7 @@ Team up with another student and build a project that interacts with the server-
 * **Projects** are intended to assess your capacity of creatively applying your skills.
 
 | Criteria	| Details	| %	|
-|:-	 |:-	| :-	|
+|:---	 |:---	| :---	|
 | Does it meet the requirements outlined in the asignment? | | 20% |
 | Does it work?	| | 20% |
 | Is the purpose of the project clear? | Interests may vary enormously among students. The only way for me to evaluate a project is to understand what you were trying to achieve.	| 10% |
@@ -136,7 +136,7 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 ## Final Grade Calculation
 
 | Item							| %		|
-|:-								|:-		|
+|:---								|:---		|
 | Participation/Attendance	| 10%	|
 | Mini Assignments(Total)	| 35%	|
 | Project #1					| 15%	|
