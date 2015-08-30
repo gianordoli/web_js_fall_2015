@@ -15,7 +15,16 @@ app.main = (function() {
 
 		// Listeners
 		socket.on('welcome', function(data){
-			console.log(data);
+			// console.log(data.msg);
+			// console.log(data.users);
+			for(var id in data.users){
+				addBall({
+					id: id,
+			        color: data.users[id]['color'],
+			        top: data.users[id]['top'],
+			        left: data.users[id]['left']					
+				});
+			}
 		});
 
 		socket.on('add-ball', function(data){
@@ -44,7 +53,11 @@ app.main = (function() {
 
 	var addBall = function(data){
 		var ball = $('<div class="ball" id="' + data.id + '"></div>')
-				 	.css('background-color', data.color);
+				 	.css({
+				 		'background-color': data.color,
+				 		'top': data.top,
+				 		'left': data.left
+				 	});
 		$('body').append(ball);
 	};
 

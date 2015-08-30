@@ -61,7 +61,10 @@ io.on('connection', function(socket) {
 
     // I'm using 'welcome,' but it could be ANY STRING!
     // The important thing is to use the same one on the client side
-    socket.emit('welcome', 'Welcome! your id is ' + socket.id);  // sending back a simple string
+    socket.emit('welcome', {
+        msg: 'Welcome! your id is ' + socket.id,
+        users: users
+    }); // Let's send a greeting message + all users currently registered
 
     // The code above sent a message to the newly created connection only! (socket)
     // If we want to send data to every user, we need io.sockets.emmit
@@ -86,7 +89,7 @@ io.on('connection', function(socket) {
     // listen to 'move' -> update user position -> emit call to render
     socket.on('move', function(data) {
         console.log(socket.id + ' has sent: ' + data);  // got a number
-        console.log(typeof data);
+        // console.log(typeof data);
 
         updateUser(socket.id, data);   // Update position
 
@@ -130,14 +133,14 @@ function addUser(id) {
             left: 0   
         }
     }
-    console.log('current users: ' + users.length);
+    console.log('current users: ' + Object.keys(users).length);
 }
 
 function removeUser(id) {
     if(users.hasOwnProperty(id)) {
         delete users[id]
     }
-    console.log('current users: ' + users.length);
+    console.log('current users: ' + Object.keys(users).length);
 }
 
 
