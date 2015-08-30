@@ -54,6 +54,6 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 
 ---
 
-### Homework
+### Assignment
 
 Start working on Project #1.

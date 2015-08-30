@@ -19,7 +19,27 @@ Applications rarely are comprised of a tangled set of static files. They're dyna
 
 ## Course Outline
 
-TBD
+See [this spreadsheet](https://docs.google.com/spreadsheets/d/1ASEmUl6g2S2g-eg-p3WHfDcNm9kfcHyDEZXfTn1ZhUw/edit?usp=sharing) for a expanded view of classes and assignments.  
+For a full description of each class, see the [lessons](lessons) folder.
+
+| class # | date | topic | assignment |
+|:- |:- |:- |:- |
+| 1 | 9/2/2015 | JavaScript Basics | Word-count app |
+| 2 | 9/9/2015 | Web App | Web app |
+| 3 | 9/16/2015 | Single-Page Application | Start working on Project #1. |
+|  | 9/23/2015 | Class do not meet |  |
+| 4 | 9/30/2015 | Databases | Work on Project #1. |
+| 5 | 10/7/2015 | Project 1 Presentations | Project #1 |
+| 6 | 10/14/2015 | Server-Side | File System app |
+| 7 | 10/28/2015 | WebSockets 1 | Project #2 proposal |
+| 8 | 10/21/2015 | Cloud | Work on Project #2 and set up your EC2. |
+| 9 | 11/4/2015 | WebSockets 2 | Work on Project #2. |
+| 10 | 11/11/2015 | Midterm Presentations | Project #2 |
+| 11 | 11/18/2015 | MVC 1 | TBD |
+| 12 | 11/24/2015 (Tuesday) | MVC 2 | Project #3 proposal |
+| 13 | 12/2/2015 | Workshop | Work on Project #3. |
+| 14 | 12/9/2015 | Workshop | Work on Project #3. |
+| 15 | 12/16/2015 | Final Presentations | Project #3 |
 
 ## Learning Outcomes
 

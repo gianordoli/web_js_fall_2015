@@ -131,6 +131,6 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 
 ---
 
-### Homework
+### Assignment
 
 Work on Project #1.

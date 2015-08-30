@@ -5,6 +5,6 @@ This lesson might be a chance to work on a new library you've always been curiou
 
 ---
 
-### Homework
+### Assignment
 
 Work on Project #3.

@@ -74,7 +74,7 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 
 ---
 
-### Homework
+### Assignment
 
 Create a word-count app. It must receive any text input through the console and return a list of words and their counts.  
 **Bonus:** make it interact with an API.  

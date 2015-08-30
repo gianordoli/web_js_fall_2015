@@ -67,7 +67,7 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 
 ---
 
-### Homework
+### Assignment
 
 Create a simple web app that takes at least *one* input from the user and outputs something to the html.
 **Bonus**: use audio or video as input or output.

@@ -38,7 +38,7 @@ In this lesson we will briefly discuss what is "the cloud" and some of its model
 
 ---
 
-### Homework
+### Assignment
 
 * Work on Project #2.
 * Set up your EC2.

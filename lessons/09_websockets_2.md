@@ -15,6 +15,6 @@
 
 ---
 
-### Homework
+### Assignment
 
 Work on Project #2.
