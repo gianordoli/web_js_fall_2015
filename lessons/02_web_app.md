@@ -36,8 +36,8 @@ No slides for today, we'll talk about the topics during the work session.
 	* SublimeLinter
 	* ColorPicker
 	* Pretty JSON
-* Github
 * Markdown
+* [Temboo](https://temboo.com/)
 
 ---
 

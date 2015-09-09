@@ -1,11 +1,11 @@
-# Web Advanced: JavaScript Spring 2015
+# Web Advanced: JavaScript Fall 2015
 
 ## [Parsons School of Design](http://www.newschool.edu/parsons/)
 
 ### [MFA Design and Technology](http://www.newschool.edu/parsons/mfa-design-technology/)
 
-PGTE 5505, Section A, CRN 6007  
-Spring, 2015* **Course Dates and Times and Location:**  Wednesdays, from 7:00 pm to 9:40 pm
+[PGTE 5505, Section A, CRN 6007](http://www.newschool.edu/ucc/courseDetail.aspx?id=PGTE5505&CourseOpenTo=NMO%2cNMR%2cNMN&Keyword=web+advanced&KeywordSearchOption=TitleDescription&PageIndex=0)  
+Fall 2015* **Course Dates and Times and Location:**  Wednesdays, from 7:00 pm to 9:40 pm
 * **Location:** 6 East 16th Street, Room 1200
 * **Faculty:** [Gabriel Gianordoli](http://gianordoli.com/)
 * **Faculty e-mail:** [giang063@newschool.edu](mailto:giang063@newschool.edu)
@@ -136,9 +136,9 @@ A full list of resources can be found [here](https://docs.google.com/spreadsheet
 ## Final Grade Calculation
 
 | Item							| %		|
-|:---								|:---		|
+|:---							|:---	|
 | Participation/Attendance	| 10%	|
-| Mini Assignments(Total)	| 35%	|
+| Mini Assignments(Total)	| 25%	|
 | Project #1					| 15%	|
 | Project #2 (Midterm)		| 25%	|
 | Project #3 (Final)		| 25%	|
