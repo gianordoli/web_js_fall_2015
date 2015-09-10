@@ -50,9 +50,11 @@ app.main = (function(){
 	// 3. Let's display this data
 	var appendData = function(data){
 		console.log('Appending data.');
+
 		// Jquery animate! CSS params, speed
-		$('html, body').animate({
-			scrollTop: $('#view').offset().top
+		// Turns out we really need this 'px' here... :(
+		$('body').animate({
+			scrollTop: $('#view').offset().top + 'px'
 		}, 'slow');
 
 		$('#view').empty(); // Jquery function!
