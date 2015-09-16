@@ -11,7 +11,7 @@ In this lesson we will add more features to our simple Web App from lesson #2. W
 * As our application grows in complexity, appending elements with JQuery turns out laborious and not effficient.
 * *Show my own examples* — This might be ok if you're working by yourself! But...
 * The biggest problem with this structure is that the structure and the logics are all embedded into one file. Say you're developing JS for a team, where another person is doing CSS. By simply looking into the html, your colleague has no way of telling what the page is doing. Also, he/she can't assign classes to anything without opening your file and skimming through the code just to find the html part.
-* Separating the logics from the rendered result is one of the principals of the architectural pattern Model-View-Controller (MVC).
+* Separating the logics from the rendered result is one of the principles of the architectural pattern Model-View-Controller (MVC).
 
 #### Templates
 
