@@ -52,6 +52,7 @@ app.main = (function() {
 	};
 
 	var addBall = function(data){
+		console.log('Appending a new ball: ' + data.id);
 		var ball = $('<div class="ball" id="' + data.id + '"></div>')
 				 	.css({
 				 		'background-color': data.color,
@@ -62,6 +63,7 @@ app.main = (function() {
 	};
 
 	var removeBall = function(data){
+		console.log('Called removeBall for ' + data);
 		$('#' + data.id).remove();
 	};
 

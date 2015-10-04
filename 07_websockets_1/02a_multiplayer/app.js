@@ -75,16 +75,41 @@ io.on('connection', function(socket) {
 });
 
 function updateUser(id, data){
+    switch(data) {
+        case 37: // left
+            users[id]['left'] -= 10;
+        break;
 
+        case 39: // right
+            users[id]['left'] += 10;
+        break;
+
+        case 38: // up
+            users[id]['top'] -= 10;
+        break;
+
+        case 40: // down
+            users[id]['top'] += 10;
+        break;
+
+        default: return; // exit
+    }
 }
 
 function addUser(id) {
-
+    if(!users.hasOwnProperty(id)) {
+        users[id] = {
+            color: 'hsla(' + Math.round(Math.random()*360) + ', 100%, 50%, 0.75)',
+            top: 0,
+            left: 0   
+        }
+    }
+    console.log('current users: ' + Object.keys(users).length);
 }
 
 function removeUser(id) {
-
+    if(users.hasOwnProperty(id)) {
+        delete users[id]
+    }
+    console.log('current users: ' + Object.keys(users).length);
 }
-
-
-

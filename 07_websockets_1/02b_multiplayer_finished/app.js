@@ -83,7 +83,7 @@ io.on('connection', function(socket) {
     socket.on('disconnect', function() {
         console.log(socket.id + ' just disconnected');
         removeUser(socket.id);  // Remove object from our server array of users
-        io.sockets.emit('remove-ball', socket.id);  // Ask clients to remove the div
+        io.sockets.emit('remove-ball', { id: socket.id });  // Ask clients to remove the div
     });    
 
     // listen to 'move' -> update user position -> emit call to render
@@ -128,7 +128,7 @@ function updateUser(id, data){
 function addUser(id) {
     if(!users.hasOwnProperty(id)) {
         users[id] = {
-            color: 'hsl(' + Math.round(Math.random()*360) + ', 100%, 50%)',
+            color: 'hsla(' + Math.round(Math.random()*360) + ', 100%, 50%, 0.75)',
             top: 0,
             left: 0   
         }
@@ -142,6 +142,3 @@ function removeUser(id) {
     }
     console.log('current users: ' + Object.keys(users).length);
 }
-
-
-
