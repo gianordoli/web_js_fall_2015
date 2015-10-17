@@ -4,7 +4,8 @@ var http = require('http');
 
 // request, response
 var server = http.createServer(function(req, res) {
-	console.log(res);
+	// console.log(req);
+	// console.log(res);
 	if(req.url === '/login') {
 		res.end('loggin you in');
 	} else if(req.url === '/logout') {

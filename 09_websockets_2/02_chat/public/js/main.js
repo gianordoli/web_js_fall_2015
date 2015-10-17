@@ -22,10 +22,10 @@ app.main = (function() {
 		console.log('Initializing app.');
 		socketStart(attachEvents);	// Sending attachEvents as a callback 
 
-    	// 	    socket.on('welcome', function(data) {	// listen for global server message
-	    //   $('#server-message').html(data);
-	    // });
-	    // name = prompt("Please enter your name", "Harry Potter");
+	    socket.on('welcome', function(data) {	// listen for global server message
+	      $('#server-message').html(data);
+	    });
+	    name = prompt("Please enter your name", "Harry Potter");
 	};
 
 	return {

@@ -15,23 +15,31 @@ app.main = (function() {
 
 		// Listeners
 		socket.on('welcome', function(data){
-			// console.log(data.msg);
+			console.log('SOCKET: welcome');
+			console.log(data.msg);
 			// console.log(data.users);
-			for(var id in data.users){
-				addBall({
-					id: id,
-			        color: data.users[id]['color'],
-			        top: data.users[id]['top'],
-			        left: data.users[id]['left']					
-				});
+			// We want to render users that were here before me.
+			// First, let's see if there were ANY
+			if(Object.keys(data.users).length > 0){
+				for(var id in data.users){
+					addBall({
+						id: id,
+				        color: data.users[id]['color'],
+				        top: data.users[id]['top'],
+				        left: data.users[id]['left']					
+					});
+				}				
 			}
 		});
 
 		socket.on('add-ball', function(data){
+			console.log('SOCKET: add-ball');
+			console.log(data);
 			addBall(data);
 		});
 		
 		socket.on('remove-ball', function(data){
+			console.log('SOCKET: remove-ball');
 			if(ballExists(data.id)){
 				removeBall(data);
 			}
@@ -39,6 +47,7 @@ app.main = (function() {
 
 		// Listen again, this time to render
 		socket.on('render', function(data){
+			console.log('SOCKET: render');
 			// console.log(data);
 			// If a ball with this ID hasn't been rendered yet, let's add it
 			if(!ballExists(data.id)){

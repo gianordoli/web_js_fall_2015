@@ -21,7 +21,6 @@ We will also see some other useful features in NodeJS, like scraping and saving 
 		* HTTP methods: GET, POST (+ PUT and DELETE)
 		* url
 		* User-agent
-		* 
 	* Request and Respond
 * Server-side languages
 	* PHP, Python, Java, ASP, Ruby...

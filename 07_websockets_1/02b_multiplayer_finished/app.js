@@ -3,6 +3,8 @@ var express		= require('express'),
 	bodyParser	= require('body-parser');	// helper for parsing HTTP requests
 var app = express();						// our Express app
 var PORT = 4000;
+var server = require('http').Server(app);   // Socket.io setup
+var io = require('socket.io')(server);
 
 // Body Parser
 app.use(bodyParser.urlencoded({ extended: false }));// parse application/x-www-form-urlencoded
@@ -22,11 +24,6 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', express.static(__dirname + '/public'));
-
-
-// -----> Socket.io setup
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
 
 // !!!!!! Hey, we just changed this !!!!!!
 server.listen(PORT, function(){
@@ -64,17 +61,20 @@ io.on('connection', function(socket) {
     socket.emit('welcome', {
         msg: 'Welcome! your id is ' + socket.id,
         users: users
-    }); // Let's send a greeting message + all users currently registered
+    });
+    // Let's send a greeting message
+    // + all users currently registered
 
     // The code above sent a message to the newly created connection only! (socket)
     // If we want to send data to every user, we need io.sockets.emmit
     addUser(socket.id);
-    io.sockets.emit('add-ball', {
+    io.sockets.emit('add-ball',{
         id: socket.id,
         color: users[socket.id]['color'],
         top: users[socket.id]['top'],
         left: users[socket.id]['left']
     }); // I'm sending an object!
+
     /*--------------------------------------------------------------*/
 
 
@@ -84,7 +84,7 @@ io.on('connection', function(socket) {
         console.log(socket.id + ' just disconnected');
         removeUser(socket.id);  // Remove object from our server array of users
         io.sockets.emit('remove-ball', { id: socket.id });  // Ask clients to remove the div
-    });    
+    });
 
     // listen to 'move' -> update user position -> emit call to render
     socket.on('move', function(data) {
