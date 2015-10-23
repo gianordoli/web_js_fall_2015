@@ -9,6 +9,11 @@ app.main = (function() {
 		$('button').off('click').on('click', function(){
 			loadWeather($(this).html());
 		});
+
+		$('#save-bt').off('click').on('click', function(){
+			var newCities = ['Portland', 'Los Angeles', 'Shanghai', 'Taipei'];
+			saveCities(newCities);
+		});
 	};
 
 	var loadCities = function(city){
@@ -19,6 +24,15 @@ app.main = (function() {
 			attachEvents();
 		});	
 	};
+
+	var saveCities = function(myCitiesArray){
+		console.log(myCitiesArray);
+		$.post('/save-cities', {
+			'cities[]': myCitiesArray
+		}, function(response){
+			console.log(response.msg);
+		});
+	}
 
 	var loadWeather = function(city){
 		$.post('/weather', {

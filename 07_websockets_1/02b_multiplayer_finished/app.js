@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));// parse application/x-www-f
 app.use(bodyParser.json());							// parse application/json
 
 // Express server
+app.use('/', express.static(__dirname + '/public'));
 app.use(function(req, res, next) {
     // Setup a Cross Origin Resource sharing
     // See CORS at https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
@@ -22,8 +23,6 @@ app.use(function(req, res, next) {
     console.log('### requesting ---> ' + url);	// Show the URL user just hit by user
     next();
 });
-
-app.use('/', express.static(__dirname + '/public'));
 
 // !!!!!! Hey, we just changed this !!!!!!
 server.listen(PORT, function(){

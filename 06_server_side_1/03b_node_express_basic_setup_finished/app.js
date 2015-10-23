@@ -96,6 +96,11 @@ app.post('/weather', function(request, response){
 	});
 });
 
+app.post('/save-cities', function(request, response){
+	console.log(request.body['cities[]']);
+	response.json({msg: 'yo!'});
+});
+
 /*---------------------------------*/
 
 
