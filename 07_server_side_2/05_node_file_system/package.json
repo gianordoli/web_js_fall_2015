@@ -1,0 +1,11 @@
+{
+  "name": "02_node_file_system",
+  "version": "0.0.0",
+  "description": "Playing with node fs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Gianordoli",
+  "license": "ISC"
+}
