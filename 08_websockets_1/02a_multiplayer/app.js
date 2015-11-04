@@ -35,7 +35,7 @@ server.listen(PORT, function(){
 
 
 /*-------------- APP --------------*/
-var users = {}
+var users = {};
 // our structure will be
 // users = { id: {
 //             color: hsl() string,
@@ -66,7 +66,7 @@ io.on('connection', function(socket) {
     socket.on('disconnect', function() {
         console.log(socket.id + ' just disconnected');
 
-    });    
+    });
 
     socket.on('', function(data) {
 
@@ -101,15 +101,15 @@ function addUser(id) {
         users[id] = {
             color: 'hsla(' + Math.round(Math.random()*360) + ', 100%, 50%, 0.75)',
             top: 0,
-            left: 0   
-        }
+            left: 0
+        };
     }
     console.log('current users: ' + Object.keys(users).length);
 }
 
 function removeUser(id) {
     if(users.hasOwnProperty(id)) {
-        delete users[id]
+        delete users[id];
     }
     console.log('current users: ' + Object.keys(users).length);
 }
