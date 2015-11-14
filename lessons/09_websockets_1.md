@@ -1,4 +1,4 @@
-## Lesson 8: WebSockets 1
+## Lesson 9: WebSockets 1
 
 These two lessons will focus on fast client-server communication using WebSockets. We will discuss when to use WebSockets (versus AJAX) and the many applications of it.  
 In the working session we will build a simple chat and a bare-bones multiplayer game using the Socket.io library.

@@ -33,7 +33,7 @@ For a full description of each class, see the [lessons](lessons) folder.
 | 6 | 10/14/2015 | Server-Side 1 | File System app |
 | 7 | 10/21/2015 | Server-Side 2 | - |
 | 8 | 10/24/2015 | Office Hours | - |
-| 9 | 11/4/2015 | WebSockets 1 | Project #2 proposal |
+| 9 | 11/4/2015 | WebSockets 1 | - |
 | 10 | 11/11/2015 | Cloud | Set up your EC2 and run a socket.io app. |
 | 11 | 11/18/2015 | WebSockets 2 | Final Project proposal due |
 | 12 | 11/24/2015 (Tuesday) | Workshop + Proposal Feedback | - |
