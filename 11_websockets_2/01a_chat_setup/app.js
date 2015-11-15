@@ -28,48 +28,30 @@ app.use('/', express.static(__dirname + '/public'));
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-// !!!!!! Hey, we just changed this !!!!!!
 server.listen(PORT, function(){
     console.log('Express server is running at ' + PORT);
 });
 
+var rooms = {};
 
 /*-------------- APP --------------*/
-// Everything will be inside the on() function
-// .on() listens to any string you create ('gabriel-entered', 'shakti-arrived',...)
-// or two predefined events: 'connection' and 'disconnect'
 io.on('connection', function(socket) {
     /*––––––––––– SOCKET.IO starts here –––––––––––––––*/
 
-    // .on()                listens to 
-    // .emit()              sends data to every user
-    // .broadcast.emit()    sends data to every user, except the newly created
-
-    // console.log(socket);
     console.log('A new user has connected: ' + socket.id);
 
-    // This could be any string!
-    // The important thing is to use the same one on the client side
-    socket.emit('welcome', 'Your user ID is ' + socket.id);
-    
-    // addUser(socket.id);
+    // Listeners
 
-    // // Listening for chat message
-    // socket.on('chat msg', function(data) {
-    //     console.log(socket.id + ' has sent: ' + data);
-    //     // Emit to every clients
-    //     io.sockets.emit('from clients', {
-    //         user: data.name,
-    //         msg: data.msg
-    //     });
-    // });
-
-    // // A listener for socket disconnection
-    // socket.on('disconnect', function() {
-    //     console.log(socket.id + ' just disconnected');
-    //     io.sockets.emit('global message', socket.id + ' just disconnected');
-    //     removeUser(socket.id);
-    // });
+    // Disconnecting
+    socket.on('disconnect', function() {
+        io.sockets.emit('bye', 'See you, ' + socket.id + '!');
+    });
 });
 
-
+// https://gist.github.com/gordonbrander/2230317
+function createId(n) {
+    // Math.random should be unique because of its seeding algorithm.
+    // Convert it to base 36 (numbers + letters), and grab the first 7 characters
+    // after the decimal.
+    return Math.random().toString(36).substr(2, n);
+}

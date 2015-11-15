@@ -1,0 +1,26 @@
+
+A) Render lobby/general app structure
+* FRONT-END: hashRouter(viewName)
+* FRONT-END: loadData(viewName)
+* SERVER: socket listener(viewName)
+* FRONT-END: socket listener(room-list)
+* FRONT-END: render(viewName)
+
+B) Create a room
+* FRONT-END: attachEvents > create room
+* SERVER: listener > create-room
+* FRONT-END: render (html template)
+
+C) Join a room
+* FRONT-END: hashRouter //room
+* SERVER: socket.on('room'), socket.join
+* FRONT-END: socket.on('joined-room')
+* FRONT-END: render (html template)
+
+D) Sending/receiving messages
+* FRONT-END: attachEvents button
+* SERVER: socket listener (msg-to-server)
+* FRONT-END: socket listener (msg-to-clients)
+
+E) Disconnecting
+* SERVER: Add leaveRoom to lobby listener
