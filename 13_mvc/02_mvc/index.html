@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<title>Angular Demo</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+</head>
+<body>
+	<!-- Anything we place inside $scope will be available inside this controller -->
+	<div ng-controller="MyController">
+		<h1>{{hit.author + ', ' + hit.name}}</h1>
+	</div>
+</body>
+</html>

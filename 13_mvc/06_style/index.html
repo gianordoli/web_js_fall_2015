@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<title>Angular Demo</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<h1>Rich People!</h1>
+	<!-- Anything we place inside $scope will be available inside this controller -->
+	<div id="main-container" ng-controller="MyController">
+		<div id="search">
+			
+			<label>Search</label>
+			<input ng-model="query">
+
+		    <label>by:
+		      <select ng-model="peopleOrder">
+		        <option value="ranking">Ranking</option>
+		        <option value="name">Name</option>
+		      </select>
+		    </label>
+
+		    <label>
+		      <input type="radio" ng-model="direction" name="direction" checked>
+		      ascending
+		     </label>
+		    <label>
+		      <input type="radio" ng-model="direction" name="direction" value="reverse">
+		      descending
+		    </label>		    
+
+		</div>		
+		<ul>
+			<li ng-repeat="item in richPeople | filter: query | orderBy: peopleOrder:direction">
+				<div ng-class="{'top10': item.ranking <= 10, 'others': item.ranking > 10}">
+
+					<img ng-style="{'width': (100 - item.ranking) * 2 + 'px'}" ng-src="{{item.img}}">
+					<!-- style="width: 100%" -->
+					
+					<h2 ng-style="{'font-size': (100 - item.ranking) / 5 + 'px'}"><a href="{{item.url}}" target="_blank">{{'#' + item.ranking + ' ' + item.name}}</a></h2>
+				</div>
+
+				<!-- <p ng-style="{'font-size': inputMsg.length + 'px', color: 'rgb(' + inputMsg.length + ', 100, 100)'}">{{inputMsg}}</p> -->
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
