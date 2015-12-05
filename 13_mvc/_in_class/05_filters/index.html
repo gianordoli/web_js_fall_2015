@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Angular Demo</title>
+	<meta charset="utf-8"></meta>
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Rich People!</h1>
+	<div id="main-container" ng-controller="MyController">
+		<div id="search">
+			<label>Search</label>
+			<input ng-model="query">
+		</div>
+
+		<label>by:
+			<select ng-model="peopleOrder">
+				<option value="ranking">Ranking</option>
+				<option value="name">Name</option>
+			</select>
+		</label>
+
+		<label>
+			<input type="radio" ng-model="direction" name="direction" checked>
+			ascending
+		</label>
+		<label>
+			<input type="radio" ng-model="direction" name="direction" value="reverse" checked>
+			descending
+		</label>		
+
+		<ul>
+			<li ng-repeat="item in richPeople | filter: query | orderBy: peopleOrder:direction">
+				<img ng-src="{{item.img}}">
+				<h2><a href="{{item.url}}" target="_blank">{{'#' + item.ranking + ' ' + item.name}}</a></h2>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
