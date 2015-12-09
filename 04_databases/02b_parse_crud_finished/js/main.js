@@ -94,6 +94,7 @@ app.main = (function() {
 							// Once we have the object, let's set a new attr
 							// and save it back
 							obj[0].set('number_of_seasons', 6);
+							// obj[0].set('new_column', new Date());
 							obj[0].save();
 						},
 						error: function(err) {

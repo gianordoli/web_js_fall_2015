@@ -84,7 +84,15 @@ app.main = (function() {
 	// 4. UPDATE
 	var updateShow = function(obj, property, value){
 		obj.set(property, value);
-		obj.save();
+		// obj.set('new_column', '');
+		obj.save(null, {
+			success: function(res){
+				console.log('Yay! Just updated an object!');
+			},
+			error: function(res, err){
+				console.log(err);
+			}
+		});
 	}
 
 	// 5. DELETE
@@ -96,12 +104,12 @@ app.main = (function() {
 
 		initParse();
 
-		// fetchShow('title', 'The Sopranos', showQuery, function(obj){
-		// 	updateShow(obj, 'title', 'Sopranos');
-		// });
-		fetchShow('title', 'Sopranos', showQuery, function(obj){
-			deleteShow(obj);
+		fetchShow('title', 'The Sopranos', showQuery, function(obj){
+			updateShow(obj, 'title', 'Sopranos');
 		});
+		// fetchShow('title', 'Sopranos', showQuery, function(obj){
+		// 	deleteShow(obj);
+		// });
 
 		// saveShow(tvShows, {
 		// 	title: 'Dexter',

@@ -1,0 +1,36 @@
+1. Splitting the node app into separate files and loading them
+
+2. Publishing a project using git
+
+	git clone
+	cd name-of-project
+	npm install
+	git pull
+
+3. node forever
+	npm install -g forever
+		// You're NOT installing on a project! That's global!
+	forever start app.js
+	forever list
+	// ps axl | grep node ?
+	forever stop 0
+
+4. Cron
+
+5. NW.js
+
+	Running a sample app
+
+		npm install -g nw
+		git clone https://github.com/zcbenz/nw-sample-apps.git
+		cd nw-sample-apps/file-explorer
+		npm start
+
+	Shipping an app
+
+		Download http://nwjs.io/
+		Right-click > Show Package Contents
+		Nav to Content/Resources and paste your project folder
+		Rename the folder to app.nw
+		Double-click on nwjs to execute the app
+
